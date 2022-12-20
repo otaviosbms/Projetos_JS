@@ -6,14 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <title>jokenpo</title>
 </head>
 
 <body>
     
-<h1>js - jokenpo</h1>
+<h1> Jokenpo - JS </h1>
 
-<h3>jogador:</h3>
+<div class="pc">
+<p>Computador:</p>
+<img src="vazio.png" alt="pc" id="pc" class="pc">
+<div>
+
+<p id="placar"></p>
+
+
+<h3>Jogador:</h3>
 <img src="pedra.png" alt="pedra">
 <img src="papel.png" alt="papel">
 <img src="tesoura.png" alt="tesoura">
@@ -21,16 +32,17 @@
     <input type="radio" name="grupo" id="pedra">
     <input type="radio" name="grupo" id="papel">
     <input type="radio" name="grupo" id="tesoura">
-    <p>
-        <input type="button" value="jogar" onclick="jogar()">
-        <input type="reset" value="reset" onclick="resetar()">
-    </p>
 </form>
-<hr>
-<h3>computador:</h3>
-<img src="vazio.png" alt="pc" id="pc">
-<hr>
-<h3 id="placar"></h3>
+
+<p class="buttons">
+    <input type="button" value="Jogar" onclick="jogar()">
+    <input type="reset" value="Reload" onclick="resetar()">
+</p>
+
+<div class="temas">
+    <button id="btnescuro">Dark Mode</button>
+    <button id="btnclaro">Normal Mode</button>
+<div>
 
 <script src="main.js"></script>
 

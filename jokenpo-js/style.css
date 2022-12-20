@@ -1,0 +1,37 @@
+body{
+    text-align: center;
+    margin-top: 85px;
+    font-weight: bold;
+    font-size: 22;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    justify-content: center;
+}
+
+.buttons{
+    margin-top: 50px;
+}
+
+.pc{
+    margin-top: 20px;
+}
+
+#placar{
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.temas{
+    margin-top: 10px;
+}
+
+.modoescuro{
+    background:rgb(40,42,54,255);
+    color:#fff;
+}
+

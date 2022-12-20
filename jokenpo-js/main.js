@@ -5,7 +5,7 @@ tesoura = document.getElementById("tesoura");
 
 function jogar(){
     if(pedra.checked == false && papel.checked == false && tesoura.checked == false){
-        alert("Selecione uma opção");
+        alert("Selecione uma opção de jogada");
     } else{
         var sorteio = Math.floor(Math.random() * 3);
         switch(sorteio){
@@ -21,11 +21,11 @@ function jogar(){
         }
 
         if ((pedra.checked && sorteio == 0)||(papel.checked && sorteio == 1)||(tesoura.checked && sorteio == 2) ) {
-            document.getElementById("placar").innerHTML="Empate";
+            document.getElementById("placar").innerHTML="Empate.";
         } else if ((pedra.checked && sorteio == 2)||(papel.checked && sorteio == 0)||(tesoura.checked && sorteio == 1)){
-                document.getElementById("placar").innerHTML="Voce Venceu";
+                document.getElementById("placar").innerHTML="Você Venceu.";
         } else{
-            document.getElementById("placar").innerHTML="Voce perdeu";
+            document.getElementById("placar").innerHTML="Você Perdeu.";
         }
     }
 }
@@ -35,3 +35,16 @@ function resetar(){
     document.getElementById("placar").innerHTML="";
 }
 
+
+
+var escuro = document.getElementById('btnescuro');
+var claro = document.getElementById('btnclaro');
+var body = document.querySelector('body');
+
+escuro.onclick = function(){
+ body.className = "modoescuro";
+}
+
+claro.onclick = function(){
+ body.className = "";
+}

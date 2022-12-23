@@ -36,7 +36,6 @@ function resetar(){
 }
 
 
-
 var escuro = document.getElementById('btnescuro');
 var claro = document.getElementById('btnclaro');
 var body = document.querySelector('body');

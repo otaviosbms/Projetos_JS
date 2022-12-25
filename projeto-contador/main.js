@@ -32,4 +32,36 @@ function iniciarcontador(min_init){
 
 }
 
-iniciarcontador(15)
+
+
+function iniciarcontadorhoras(hor_init){
+    horas.innerHTML = ((hor_init - 1) > 9 ) ? ("" + ( hor_init - 1)) : ("0" + hor_init - 1);
+    minutos.innerHTML = "59";
+
+
+
+    var h = hor_init - 1;
+    var m = 59;
+
+
+    var contador = setInterval(function(){
+
+        horas.innerHTML = (h > 9 ) ? ("" + h ) : ("0" + h);
+        minutos.innerHTML = (m > 9 ) ? ("" + m ) : ("0" + m);
+
+        if(m > 0){
+            m -= 1;
+        }else if(m == 0 && h > 0){
+            m = 59;
+            h -= 1;
+        }else{
+            h = hor_init;
+        }
+    }, 1000);
+
+
+}
+
+iniciarcontadorhoras(1)
+
+iniciarcontador()

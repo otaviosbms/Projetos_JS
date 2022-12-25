@@ -1,0 +1,18 @@
+body{
+    margin-top: 300px;
+}
+
+.contador{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    justify-content: center;
+}
+
+div h1{
+    font-size: 40px;
+}
+
+div p{
+    font-size: 30px;
+}

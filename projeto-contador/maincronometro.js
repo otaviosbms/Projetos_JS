@@ -19,24 +19,20 @@ function iniciarcontador(){
 
         segundos.innerHTML = seg;
 
-        if(seg == 60){
+        if(seg == 59){
             min = min + 1
-
+            seg = 0 + 1
             minutos.innerHTML = min;
 
-            seg = 0 + 1
-        }if(min == 60){
+        }if(min == 59){
             hor = hor + 1
-
+            min = 0 + 1
             horas.innerHTML = hor;
             
-            min = 0 + 1
         }if(hor == 24){
             dia = dia + 1
-
-            dias.innerHTML = dia;
-
             hor = 0 + 1
+            dias.innerHTML = dia;
         }
 
     }, 1000);

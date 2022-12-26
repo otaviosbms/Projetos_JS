@@ -1,5 +1,7 @@
 body{
     margin-top: 300px;
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .contador{
@@ -7,6 +9,12 @@ body{
     flex-direction: row;
     gap: 35px;
     justify-content: center;
+    background-color: black;
+    margin-left: 650px;
+    margin-right: 650px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 20px;
 }
 
 div h1{
@@ -15,4 +23,11 @@ div h1{
 
 div p{
     font-size: 30px;
+}
+
+button{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
 }

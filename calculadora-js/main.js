@@ -1,6 +1,14 @@
 var visor = document.getElementById("visor");
 
-var botao1 = document.getElementById('botao1');
+
+
+function botao1(){
+    visor.innerHTML="1";
+}
+
+
+
+
 var botao2 = document.getElementById('botao2');
 var botao3 = document.getElementById('botao3');
 var botao4 = document.getElementById('botao4');
@@ -13,11 +21,24 @@ var botao0 = document.getElementById('botao0');
 var botaoponto = document.getElementById('botao.');
 
 var botaomais = document.getElementById('botao+');
+
+function botaomais(){
+    visor.innerHTML="+";
+}
+
 var botaomenos = document.getElementById('botao-');
 var botaomulti = document.getElementById('botaox');
 var botaodiv = document.getElementById('botao/');
 var botaoc = document.getElementById('botaoc');
 var botaoigual = document.getElementById('botaoigual');
 
+
 var conta;
+
+
+
+
+
+
+
 
